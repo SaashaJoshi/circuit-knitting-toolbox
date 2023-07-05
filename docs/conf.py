@@ -48,6 +48,7 @@ extensions = [
     "nbsphinx",
     "sphinx_copybutton",
     "sphinx_reredirects",
+    "sphinx.ext.intersphinx"
 ]
 templates_path = ["_templates"]
 numfig = True
@@ -82,4 +83,12 @@ exclude_patterns = [
 redirects = {
     "circuit_cutting/tutorials/gate_cutting_to_reduce_circuit_width.html": "01_gate_cutting_to_reduce_circuit_width.html",
     "circuit_cutting/tutorials/gate_cutting_to_reduce_circuit_depth.html": "02_gate_cutting_to_reduce_circuit_depth.html",
+}
+
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/3", None),
+    "qiskit": ("https://qiskit.org/documentation/", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/", None),
+    "rustworkx": ("https://qiskit.org/documentation/rustworkx/", None),
 }
